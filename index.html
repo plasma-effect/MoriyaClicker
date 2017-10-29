@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="main.js"></script>
+        <script>setInterval(main_loop,1000);</script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <div id="main">
+            <img src="temple.png" onclick="click_action()">
+            <p id="shinko">信仰：0</p>
+            <p id="shinkopersecond">信仰/秒：0</p>
+            <p id="shinkoperclick">信仰/クリック：1</p>
+            <p id="money">お布施：0円</p>
+            <p id="moneypersecond">お布施/秒：0(円/秒)</p>
+            <a href="manual.html">遊び方</a>
+        </div>
+        <div id="helper">
+            <div id="helpergazou">
+                <img src="kanban.png" onclick="helperclick(0)">
+            </div>
+            <div id="helperdata">
+                <p>宣伝用看板</p>
+                <p id="object0n">値段：10円</p>
+                <p id="object0k">個数：0個</p>
+            </div>
+        </div>
+    </body>
+</html>

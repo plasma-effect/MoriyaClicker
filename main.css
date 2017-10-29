@@ -1,0 +1,22 @@
+body
+{
+    user-select: none;
+}
+#main
+{
+    width: 800px;
+    float: left;
+}
+#helper
+{
+    float: left;
+}
+#helpergazou
+{
+    width: 200px;
+    float: left;
+}
+#helperdata
+{
+    float: left;
+}
