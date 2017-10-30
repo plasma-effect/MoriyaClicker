@@ -4,7 +4,7 @@ var shinkoperclick = 10;
 var money = 0;
 var moneypersecond = 0;
 var objects = [[0, 10, 1]];
-const booster = 1.01;
+const booster = 1.1;
 
 function add_shinko(v: number)
 {
