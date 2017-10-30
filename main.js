@@ -4,6 +4,7 @@ var shinkoperclick = 10;
 var money = 0;
 var moneypersecond = 0;
 var objects = [[0, 10, 1]];
+var booster = 1.01;
 function add_shinko(v) {
     shinko += v;
     var s = document.getElementById("shinko");
@@ -57,13 +58,13 @@ function shinkoborder(v, u) {
     return false;
 }
 function helperclick(v) {
-    var n = Math.floor(objects[v][1] * Math.pow(1.01, objects[v][0]));
+    var n = Math.floor(objects[v][1] * Math.pow(booster, objects[v][0]));
     if (money >= n) {
         add_money(-n);
         ++objects[v][0];
         add_shinkopersecond(objects[v][2]);
         var s = document.getElementById("object" + v + "n");
-        s.textContent = "値段：" + Math.floor(objects[v][1] * Math.pow(1.1, objects[v][0])) + "円";
+        s.textContent = "値段：" + Math.floor(objects[v][1] * Math.pow(booster, objects[v][0])) + "円";
         var t = document.getElementById("object" + v + "k");
         t.textContent = "個数：" + objects[v][0] + "個";
     }
